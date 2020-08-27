@@ -7,4 +7,4 @@ cypress/screenshots
 cypress/videos
 cypress/integration/examples
 cypress/logs
-.idea
+.idea.DS_Store
