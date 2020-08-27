@@ -1,0 +1,10 @@
+.DS_Store*
+._.DS_Store*
+node_modules
+.history
+.vscode
+cypress/screenshots
+cypress/videos
+cypress/integration/examples
+cypress/logs
+.idea
