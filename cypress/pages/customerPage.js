@@ -1,9 +1,5 @@
 class customerPage {
 
-    static pageMustHave(text){
-        cy.contains(text).should('be.visible')  
-    }
-
     static enterCompanyName(name){
         cy.get('[type="text"]').type(name);
     }

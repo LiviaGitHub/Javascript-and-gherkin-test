@@ -1,15 +1,12 @@
-import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps"
+import { When, Then, And } from "cypress-cucumber-preprocessor/steps"
 import parloaHomePage from '../../pages/homePage.js'
 import customerPage from '../../pages/customerPage.js'
 import commons from '../../pages/commons.js'
+import commonSteps from '../common/commonSteps'
 import faker from 'faker'
 
 let companyName = faker.name.findName();
 let description = faker.lorem.sentence(8);
-
-Given('I open the Parloa application', () => {
-    parloaHomePage.visitHomePage();
-})
 
 When('I click Add Customer', () => {
     parloaHomePage.clickAddCustomer();

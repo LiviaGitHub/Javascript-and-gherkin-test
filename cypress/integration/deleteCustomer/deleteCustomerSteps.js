@@ -1,11 +1,8 @@
-import { Given, When } from "cypress-cucumber-preprocessor/steps"
+import { When, And, Then } from "cypress-cucumber-preprocessor/steps"
 import parloaHomePage from '../../pages/homePage.js'
 import deleteCustomerPage from '../../pages/deleteCustomerPage.js'
 import commons from '../../pages/commons.js'
-
-Given('I open the Parloa application', () => {
-    parloaHomePage.visitHomePage();
-})
+import commonSteps from '../common/commonSteps'
 
 When('I click on the trash icon of the first listed customer', () => {
     parloaHomePage.clickOnTheFirstTrashIcon();
