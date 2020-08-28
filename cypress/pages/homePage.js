@@ -9,7 +9,7 @@ class parloaHomePage {
     }
 
     static clickOnTheFirstTrashIcon(){
-        cy.get('.style__icon___2WjcZ').eq(3).click();
+        cy.get('.style__icon___2WjcZ').eq(1).click();
     }
 
     static clickOnTheFirstEditIcon(){

@@ -11,14 +11,14 @@ When('I click on the trash icon of the first listed customer', () => {
     parloaHomePage.clickOnTheFirstTrashIcon();
 })
 
-Then('A window opens to confirm', () => {
+And('A window opens to confirm', () => {
     commons.pageMustHave('re you sure you want to remove customer');
     commons.pageMustHave('YES');
     commons.pageMustHave('NO');
 })
 
-And('I click on Yes', () => {
-    deleteCustomerPage.clickYesToDeleteCustomer();
+Then('I delete the customer', () => {
+    deleteCustomerPage.deleteCustomer();
 })
 
 
