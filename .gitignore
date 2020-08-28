@@ -1,6 +1,6 @@
 .DS_Store*
 ._.DS_Store*
-node_modules
+/node_modules
 .history
 .vscode
 cypress/screenshots
