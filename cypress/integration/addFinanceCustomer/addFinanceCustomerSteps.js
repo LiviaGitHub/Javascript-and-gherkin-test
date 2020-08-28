@@ -1,6 +1,6 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps"
 import parloaHomePage from '../../pages/homePage.js'
-import addCustomerPage from '../../pages/addCustomerPage.js'
+import customerPage from '../../pages/customerPage.js'
 import commons from '../../pages/commons.js'
 import faker from 'faker'
 
@@ -16,16 +16,16 @@ When('I click Add Customer', () => {
 })
 
 And('I fill out the form', () => {
-    addCustomerPage.enterCompanyName(companyName);
-    addCustomerPage.chooseFinance();
-    addCustomerPage.enterDescription(description);
+    customerPage.enterCompanyName(companyName);
+    customerPage.chooseFinance();
+    customerPage.enterDescription(description);
 })
 
 And('I click on Add', () => {
-    addCustomerPage.clickAdd();
+    customerPage.clickAdd();
 })
 
 Then('I should see the new registered customer', () => {
     commons.pageMustHave(companyName);
-    commons.getTheLatestIndustryType('finance');
+    parloaHomePage.getTheLatestIndustryType('finance');
 })

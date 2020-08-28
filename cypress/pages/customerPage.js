@@ -1,4 +1,4 @@
-class addCustomerPage {
+class customerPage {
 
     static pageMustHave(text){
         cy.contains(text).should('be.visible')  
@@ -6,6 +6,10 @@ class addCustomerPage {
 
     static enterCompanyName(name){
         cy.get('[type="text"]').type(name);
+    }
+
+    static cleanCompanyName(){
+        cy.get('[type="text"]').clear() 
     }
 
     static chooseFinance(){
@@ -19,6 +23,10 @@ class addCustomerPage {
     static clickAdd(){
         cy.get('.style__text___2xIA2').contains('ADD').click({ force: true });
     } 
+
+    static clickEdit(){
+        cy.get('.style__text___2xIA2').contains('EDIT').click({ force: true });
+    } 
 }
 
-export default addCustomerPage;
+export default customerPage;

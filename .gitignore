@@ -8,3 +8,4 @@ cypress/videos
 cypress/integration/examples
 cypress/logs
 .idea.DS_Store
+.DS_Store
