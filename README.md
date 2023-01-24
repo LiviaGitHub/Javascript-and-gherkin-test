@@ -1,4 +1,4 @@
-# Parloa challenge
+# challenge
 
 **Task 1: Manual Test and Bug ticket**
 
